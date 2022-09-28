@@ -6,6 +6,7 @@ character = load_image('HeroKnight.png')
 x = 50
 y = 100
 
+# 숨쉬기
 def cha_breath(x, y):
     frame = 0
     for a in range(16):
@@ -17,6 +18,7 @@ def cha_breath(x, y):
      delay(0.05)
      get_events()
 
+# 뛰기
 def cha_run(x, y):
     frame = 0
     while (x < 400):
@@ -33,6 +35,7 @@ def cha_run(x, y):
         get_events()
     return x
 
+# 공격
 def cha_atk(x, y):
     frame = 0
     for a in range(12):
@@ -47,6 +50,7 @@ def cha_atk(x, y):
      delay(0.05)
      get_events()
 
+# 구르기
 def cha_rush(x, y):
     frame = 0
     for a in range(9):
@@ -60,6 +64,7 @@ def cha_rush(x, y):
         get_events()
     return x
 
+# 점프
 def cha_jump(x, y):
     frame = 0
     for a in range(8):
@@ -76,6 +81,7 @@ def cha_jump(x, y):
         delay(0.05)
         get_events()
 
+# 실행코드
 cha_breath(x, y)
 cha_jump(x, y)
 cha_breath(x, y)
